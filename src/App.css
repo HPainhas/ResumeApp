@@ -1,38 +1,259 @@
-.App {
-  text-align: center;
+/* Global Styles */
+:root {
+	--primary-color: #17a2b8;
+	--dark-color: #343a40;
+	--light-color: #f4f4f4;
+	--danger-color: #dc3545;
+	--success-color: #28a745;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+	scroll-behavior: smooth;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1rem;
+	line-height: 1.6;
+	background-color: #fff;
+	color: #333;
 }
 
-.App-link {
-  color: #61dafb;
+footer {
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul {
+	list-style: none;
+}
+
+/* General CSS */
+
+.container {
+	max-width: 1100px;
+	margin: auto;
+	overflow: hidden;
+	padding: 0 2rem;
+	margin-top: 6rem;
+	margin-bottom: 3rem;
+}
+
+.center {
+	text-align: center;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.barely-readable {
+	color: grey;
+}
+
+.top-10 {
+	margin-top: 10px;
+}
+
+/* Navbar */
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.8rem 2rem;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	top: 0;
+	opacity: 0.9;
+}
+
+/* .navbar h1 {
+	padding: 0.45rem;
+	margin: 0 0.25rem;
+} */
+
+.navbar img {
+	vertical-align: middle;
+}
+
+.navbar ul {
+	display: flex;
+}
+
+.navbar a {
+	color: #fff;
+	font-weight: 600;
+	padding: 0.45rem;
+	margin: 0 0.25rem;
+	text-decoration: none;
+}
+
+.navbar a:hover {
+	color: grey;
+}
+
+/* .navbar a:active {
+	color: purple;
+	text-decoration: underline;
+	text-underline-position: below;
+} */
+
+.navbar .welcome span {
+	margin-right: 0.6rem;
+}
+
+.btn-dark,
+.bg-dark,
+.badge-dark,
+.alert-dark {
+	background: #24292f;
+	color: #fff;
+}
+
+/* Overlay */
+.dark-overlay {
+	background-color: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Landing Page */
+.landing {
+	position: relative;
+	background: url('https://media.giphy.com/media/l5JbspfwZ0yjHjlJ0K/giphy-downsized-large.gif')
+		no-repeat center center/cover;
+	height: 100vh;
+}
+
+.landing-inner {
+	color: #fff;
+	height: 100%;
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+/* About Page */
+.about {
+	position: relative;
+	background-color: whitesmoke;
+	height: 100vh;
+}
+
+.about-inner {
+	color: #24292f;
+	height: 100%;
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+/* Resume Page */
+.resume {
+	position: relative;
+	background-color: whitesmoke;
+	height: 100vh;
+}
+
+.resume-inner {
+	color: navy;
+	height: 100%;
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+/* Portfolio Page */
+.portfolio {
+	position: relative;
+	background-color: orange;
+	height: 100vh;
+}
+
+.portfolio-inner {
+	color: whitesmoke;
+	height: 100%;
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+/* Footer CSS */
+
+.social-container {
+	/* background-color: rgba(36, 41, 37, 0.5); */
+	background-color: rgba(220, 220, 220, 0.8);
+	padding: 25px 50px;
+	text-align: center;
+}
+
+a.social {
+	margin: 0 1rem;
+	transition: transform 250ms;
+	display: inline-block;
+}
+
+a.social:hover {
+	transform: translateY(-2px);
+}
+
+a.linkedin {
+	color: #2867b2;
+}
+
+a.github {
+	color: black;
+}
+
+/* Mobile Styles */
+@media (max-width: 700px) {
+	.container {
+		margin-top: 8rem;
+	}
+
+	/* Navbar */
+	.navbar {
+		display: block;
+		text-align: center;
+	}
+
+	.navbar ul {
+		text-align: center;
+		justify-content: center;
+	}
+
+	.navbar h1 {
+		margin-bottom: 1rem;
+	}
+
+	.navbar .welcome {
+		display: none;
+	}
 }

@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import React, { Fragment } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import resumeData from './assets/resume.json';
+import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
+import Landing from './components/pages/Landing';
+import NotFound from './components/layout/NotFound';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	return (
+		<Router>
+			<Fragment>
+				<Navbar />
+				<Switch>
+					<Route exact path='/' component={Landing} />
+					<Route component={NotFound} />
+				</Switch>
+				<Footer resumeData={resumeData} />
+			</Fragment>
+		</Router>
+	);
+};
 
 export default App;
