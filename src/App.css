@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1rem;
 	line-height: 1.6;
 	background-color: #fff;
@@ -35,15 +35,29 @@ ul {
 	list-style: none;
 }
 
+a {
+	text-decoration: none;
+}
+
 /* General CSS */
 
 .container {
-	max-width: 1100px;
-	margin: auto;
-	overflow: hidden;
-	padding: 0 2rem;
-	margin-top: 6rem;
-	margin-bottom: 3rem;
+	max-width: 1200px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	padding: 0 40px;
+	position: relative;
+	clear: both;
+}
+
+.content {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	padding-right: 20px;
 }
 
 .center {
@@ -63,22 +77,23 @@ ul {
 }
 
 /* Navbar */
-.navbar {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0.8rem 2rem;
+.navbar-wrapper {
 	position: fixed;
-	z-index: 1;
-	width: 100%;
 	top: 0;
-	opacity: 0.9;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	transition: all 0.3s ease;
 }
 
-/* .navbar h1 {
-	padding: 0.45rem;
-	margin: 0 0.25rem;
-} */
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 2rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
 
 .navbar img {
 	vertical-align: middle;
@@ -100,14 +115,13 @@ ul {
 	color: grey;
 }
 
-/* .navbar a:active {
-	color: purple;
-	text-decoration: underline;
-	text-underline-position: below;
-} */
-
 .navbar .welcome span {
 	margin-right: 0.6rem;
+}
+
+a.active {
+	border-bottom: 2px solid white;
+	padding-bottom: 5px;
 }
 
 .btn-dark,
@@ -129,7 +143,7 @@ ul {
 }
 
 /* Landing Page */
-.landing {
+.landing-container {
 	position: relative;
 	background: url('https://media.giphy.com/media/l5JbspfwZ0yjHjlJ0K/giphy-downsized-large.gif')
 		no-repeat center center/cover;
@@ -142,10 +156,45 @@ ul {
 	width: 80%;
 	margin: auto;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
+	padding: 0 40px;
+}
+
+.landing-inner .content h3 {
+	line-height: 1.3;
+	color: #fff;
+	position: relative;
+	overflow: hidden;
+	font-size: 72px;
+	font-family: 'Montserrat';
+	text-transform: uppercase;
+	font-weight: 900;
+	display: inline-block;
+}
+
+.landing-inner .content h3 span {
+	-webkit-text-stroke: 1px #fff;
+	color: transparent;
+	padding-left: 2px;
+}
+
+.landing-inner .content h3 .positions {
+	text-transform: capitalize;
+}
+
+.landing-inner .content .location {
+	font-weight: 700;
+	font-size: 35px;
+	font-family: 'Montserrat';
+	color: #fff;
+	padding: 0px 0 10px;
+}
+
+.name-wrap,
+.location-wrap {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
 }
 
 /* About Page */
@@ -205,6 +254,31 @@ ul {
 	text-align: center;
 }
 
+/* Button */
+.white-fill-bg {
+	margin-top: 35px;
+	text-decoration: none;
+	display: inline-block;
+	border: 2px solid #fff;
+	font-family: 'Poppins';
+	transition: all 0.5s cubic-bezier(0, 0, 0.1, 1);
+	font-size: 16px;
+}
+
+.btn-medium {
+	padding: 12px 41px;
+}
+
+.white-fill-bg.btn-outline {
+	background: transparent;
+	color: #fff;
+}
+
+.white-fill-bg.btn-outline:hover {
+	background: #fff;
+	color: #000;
+}
+
 /* Footer CSS */
 
 .social-container {
@@ -255,5 +329,18 @@ a.github {
 
 	.navbar .welcome {
 		display: none;
+	}
+
+	/* Landing Page*/
+	.landing-inner {
+		margin: unset;
+	}
+
+	.landing-inner .content h3 {
+		font-size: 40px;
+	}
+
+	.landing-inner .content .location {
+		font-size: 25px;
 	}
 }
