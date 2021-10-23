@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import CountriesApp from '../../assets/countries_app.png';
 import ResumeApp from '../../assets/resume_app.jpg';
-import DevConnector from '../../assets/devconnector_app.jpg';
+import DevSocializa from '../../assets/devsocializa_app.jpg';
 import PokemonApp from '../../assets/pokemon_app.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faJsSquare, faJava } from '@fortawesome/free-brands-svg-icons';
@@ -23,8 +23,8 @@ const Projects = ({ repos }) => {
                         color = 'Orange';
                     }
 
-                    if (repository.name === 'DevConnector')
-                        imageSrc = DevConnector;
+                    if (repository.name === 'DevSocializa')
+                        imageSrc = DevSocializa;
                     else if (repository.name === 'ResumeApp')
                         imageSrc = ResumeApp;
                     else if (repository.name === 'PokemonApp')
