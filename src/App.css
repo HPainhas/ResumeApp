@@ -124,6 +124,12 @@ img {
     padding: 10px;
 }
 
+.row {
+    width: 96%;
+    max-width: 1020px;
+}
+
+.row:before,
 .row:after {
     content: '';
     display: table;
@@ -706,9 +712,148 @@ img {
     padding: 150px 0 100px;
 }
 
+.education,
+.work {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.skill {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.resume .header-col {
+    padding-top: 9px;
+}
+
+.row .three {
+    width: 25%;
+}
+
+.columns {
+    position: relative;
+    padding: 0 20px;
+    min-height: 1px;
+    float: left;
+}
+
+.resume h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.resume h1 span {
+    border-bottom: 3px solid gray;
+    padding-bottom: 6px;
+}
+
+.resume .main-col {
+    padding-right: 10%;
+}
+
+.row .nine {
+    width: 75%;
+}
+
+.row .row {
+    width: auto;
+    max-width: none;
+    margin: 0 -20px;
+}
+
+.row .twelve {
+    width: 100%;
+}
+
+.resume h3 {
+    font-size: 25px;
+}
+
+.resume .degree {
+    font-size: 16px;
+    font-style: italic;
+    color: #6e7881;
+    margin-top: 9px;
+}
+
+.resume .degree span {
+    font-style: normal;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.resume .date {
+    font-size: 15px;
+    margin-top: 6px;
+}
+
+.resume .deans {
+    font-size: 16px;
+    font-style: italic;
+    color: #6e7881;
+    margin-top: 9px;
+}
+
+.resume .deans span {
+    margin-left: 5px;
+}
+
+.resume .focus {
+    font-size: 16px;
+    font-style: italic;
+    color: #6e7881;
+    margin-top: 9px;
+}
+
+.resume .focus span {
+    margin-left: 5px;
+}
+
+.resume .gpa {
+    font-size: 16px;
+    font-style: italic;
+    color: #6e7881;
+    margin-top: 9px;
+}
+
+.resume .gpa span {
+    margin-left: 5px;
+}
+
+.resume .work-info {
+    font-size: 16px;
+    font-style: italic;
+    color: #6e7881;
+    margin-top: 9px;
+    margin-bottom: 24px;
+}
+
+.resume .work-info span {
+    font-style: normal;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.resume .technical-skills {
+    text-align: center;
+}
+
+.resume .tech-skill {
+    font-size: 16px;
+    font-weight: 500;
+    color: #6e7881;
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+}
+
 /* Footer CSS */
 .social-container {
-    /* background-color: rgba(36, 41, 37, 0.5); */
     background-color: rgba(220, 220, 220, 0.8);
     padding: 25px 50px;
     text-align: center;
