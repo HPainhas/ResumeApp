@@ -603,7 +603,8 @@ img {
 .column img {
     border: 4px solid #767676;
     border-radius: 5px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 450px;
 }
 
 .column img:hover {
@@ -619,7 +620,7 @@ img {
     color: gray;
 }
 
-/* Resume Page */
+/* Skills Section */
 .skills {
     width: 100%;
     height: auto;
@@ -695,6 +696,16 @@ img {
     overflow: hidden;
 }
 
+/* Resume Section */
+.resume {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    background-color: white;
+    padding: 150px 0 100px;
+}
+
 /* Footer CSS */
 .social-container {
     /* background-color: rgba(36, 41, 37, 0.5); */
@@ -758,7 +769,7 @@ a.github {
         text-align: center;
     }
 
-    /* Resume Page */
+    /* Skills Section */
     .skills .skills-inner {
         flex-direction: column;
     }
@@ -792,7 +803,7 @@ a.github {
         width: 100%;
     }
 
-    /* Resume Page */
+    /* Skills Section */
     .skills {
         padding: 60px 0;
     }
