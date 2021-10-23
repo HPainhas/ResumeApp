@@ -227,7 +227,7 @@ img {
     height: auto;
     float: left;
     clear: both;
-    background-color: white;
+    background-color: black;
     padding: 20px 0;
     box-shadow: 0 10px 40px 0 rgb(62 68 125 / 10%);
 }
@@ -243,7 +243,7 @@ img {
 }
 
 .mobile-navbar .logo img {
-    filter: invert(1);
+    /* filter: invert(1); */
     max-width: 100px;
 }
 
@@ -276,7 +276,7 @@ img {
 .trigger .hamburger .hamburger-inner,
 .trigger .hamburger .hamburger-inner:after,
 .trigger .hamburger .hamburger-inner:before {
-    background-color: #000;
+    background-color: white;
     width: 26px;
     transition: all 0.3s ease;
 }
@@ -286,7 +286,7 @@ img {
 .trigger .hamburger-inner {
     width: 30px;
     height: 2px;
-    background-color: #333;
+    background-color: white;
     position: absolute;
     transition-property: -webkit-transform;
     transition-property: transform;
