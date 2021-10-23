@@ -142,6 +142,10 @@ img {
     margin-left: 10px;
 }
 
+.left-20 {
+    margin-left: 20px;
+}
+
 .top-10 {
     margin-top: 10px;
 }
@@ -608,6 +612,7 @@ img {
 
 .column h3 {
     display: inline;
+    /* color: #2867b2; */
 }
 
 .column h3:hover {

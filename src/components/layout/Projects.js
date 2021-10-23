@@ -56,7 +56,7 @@ const Projects = ({ repos }) => {
                                         icon={iconSrc}
                                         size='2x'
                                         color={color}
-                                        className='left-10'
+                                        className='left-20'
                                     />
                                 </div>
                                 <p>{repository.description}</p>
