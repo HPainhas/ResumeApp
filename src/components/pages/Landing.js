@@ -1,6 +1,7 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { Fragment, useState } from 'react';
 import About from '../sections/About';
 import Resume from '../sections/Resume';
+import Skill from '../sections/Skill';
 import Portfolio from '../sections/Portfolio';
 import resumeData from '../../assets/resume.json';
 import TextTransition, { presets } from 'react-text-transition';
@@ -68,6 +69,7 @@ const Landing = () => {
             ) : null}
             <About />
             <Portfolio />
+            <Skill />
             <Resume />
         </Fragment>
     );
