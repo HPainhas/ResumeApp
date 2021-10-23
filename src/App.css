@@ -82,11 +82,24 @@ img {
     padding-right: 20px;
 }
 
+.entry {
+    position: relative;
+}
+
 .title {
     width: 100%;
     height: auto;
     clear: both;
     float: left;
+}
+
+.title .title-flex {
+    width: 100%;
+    height: auto;
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .title span {
@@ -105,6 +118,18 @@ img {
     font-weight: 800;
 }
 
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.row:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
 .icon {
     margin-right: 10px;
 }
@@ -113,8 +138,16 @@ img {
     color: grey;
 }
 
+.left-10 {
+    margin-left: 10px;
+}
+
 .top-10 {
     margin-top: 10px;
+}
+
+.position-relative {
+    position: relative;
 }
 
 /* Button */
@@ -540,6 +573,47 @@ img {
     padding-top: 27px;
 }
 
+/* Portfolio Page */
+.portfolio {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    background-color: white;
+    padding: 150px 0 100px;
+}
+
+.portfolio-list {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    padding-top: 50px;
+}
+
+.column .repo-name {
+    display: flex;
+    align-items: center;
+}
+
+.column img {
+    border: 4px solid #767676;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.column img:hover {
+    opacity: 0.5;
+}
+
+.column h3 {
+    display: inline;
+}
+
+.column h3:hover {
+    color: gray;
+}
+
 /* Resume Page */
 .resume {
     position: relative;
@@ -549,25 +623,6 @@ img {
 
 .resume-inner {
     color: navy;
-    height: 100%;
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-/* Portfolio Page */
-.portfolio {
-    position: relative;
-    background-color: orange;
-    height: 100vh;
-}
-
-.portfolio-inner {
-    color: whitesmoke;
     height: 100%;
     width: 80%;
     margin: auto;
@@ -631,9 +686,18 @@ a.github {
         width: 100%;
         text-align: center;
     }
+
+    /* Portfolio Section */
+    .portfolio {
+        padding: 100px 0 80px;
+    }
+
+    .portfolio .title {
+        text-align: center;
+    }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 900px) {
     /* About Section */
     .about {
         padding: 60px 0;
@@ -643,6 +707,11 @@ a.github {
         padding-right: 0;
         width: 100%;
         margin-bottom: 50px;
+    }
+
+    /* Portfolio Section */
+    .column {
+        width: 100%;
     }
 
     /* Button */

@@ -15,13 +15,14 @@ const positions = [
 const Landing = () => {
     const [index, setIndex] = useState(0);
 
-    useEffect(() => {
-        const intervalId = setInterval(
-            () => setIndex(index => index + 1),
-            3000 // Every 3 seconds
-        );
-        return () => clearTimeout(intervalId);
-    }, []);
+    // TODO THIS KEEPS RE-RENDERING THE ENTIRE PAGE
+    // useEffect(() => {
+    //     const intervalId = setInterval(
+    //         () => setIndex(index => index + 1),
+    //         3000 // Every 3 seconds
+    //     );
+    //     return () => clearTimeout(intervalId);
+    // }, []);
 
     return (
         <Fragment>
