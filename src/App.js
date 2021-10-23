@@ -5,22 +5,24 @@ import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Landing from './components/pages/Landing';
 import NotFound from './components/layout/NotFound';
+import MobileNavbar from './components/layout/MobileNavbar';
 
 import './App.css';
 
 const App = () => {
-	return (
-		<Router>
-			<Fragment>
-				<Navbar />
-				<Switch>
-					<Route exact path='/' component={Landing} />
-					<Route component={NotFound} />
-				</Switch>
-				<Footer resumeData={resumeData} />
-			</Fragment>
-		</Router>
-	);
+    return (
+        <Router>
+            <Fragment>
+                <Navbar />
+                <MobileNavbar />
+                <Switch>
+                    <Route exact path='/' component={Landing} />
+                    <Route component={NotFound} />
+                </Switch>
+                <Footer resumeData={resumeData} />
+            </Fragment>
+        </Router>
+    );
 };
 
 export default App;
