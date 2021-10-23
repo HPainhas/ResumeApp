@@ -25,7 +25,7 @@ body {
     word-wrap: break-word;
     font-weight: 400;
     background-color: #fff;
-    color: #333;
+    color: #767676;
 }
 
 footer {
@@ -44,12 +44,24 @@ a {
     cursor: pointer !important;
 }
 
+h3 {
+    font-size: 30px;
+    line-height: 1.4;
+    color: black;
+}
+
 img {
     max-width: 100%;
     vertical-align: middle;
 }
 
 /* General CSS */
+.section-container {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+}
 
 .container {
     max-width: 1200px;
@@ -60,12 +72,6 @@ img {
     padding: 0 40px;
     position: relative;
     clear: both;
-}
-
-.section-container {
-    position: relative;
-    background-color: whitesmoke;
-    height: 100vh;
 }
 
 .content {
@@ -97,34 +103,6 @@ img {
 
 .title h3 {
     font-weight: 800;
-    font-size: 30px;
-}
-
-.text {
-    width: 100%;
-    height: auto;
-    clear: both;
-    float: left;
-    margin-bottom: 40px;
-    padding-top: 27px;
-}
-
-.button {
-    width: 100%;
-    height: auto;
-    clear: both;
-    float: left;
-}
-
-.button a {
-    text-decoration: none;
-    color: #fff;
-    background-color: #000;
-    display: inline-block;
-    padding: 13px 48px;
-    border: 2px solid #000;
-    transition: all 0.5s cubic-bezier(0, 0, 0.1, 1);
-    cursor: pointer !important;
 }
 
 .icon {
@@ -137,6 +115,53 @@ img {
 
 .top-10 {
     margin-top: 10px;
+}
+
+/* Button */
+.white-fill-bg {
+    margin-top: 35px;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #fff;
+    transition: all 0.5s cubic-bezier(0, 0, 0.1, 1);
+    font-size: 16px;
+}
+
+.btn-medium {
+    padding: 12px 41px;
+}
+
+.white-fill-bg.btn-outline {
+    background: transparent;
+    color: #fff;
+}
+
+.white-fill-bg.btn-outline:hover {
+    background: #fff;
+    color: #000;
+}
+
+.button {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    padding: 13px 48px;
+    border: 2px solid black;
+    transition: all 0.5s cubic-bezier(0, 0, 0.1, 1);
+    cursor: pointer !important;
+}
+
+.button a:hover {
+    background: transparent;
+    color: black;
 }
 
 /* Navbar */
@@ -475,11 +500,6 @@ img {
     align-items: center;
 }
 
-.about .right {
-    width: 50%;
-    padding-left: 50px;
-}
-
 .about .left {
     width: 50%;
     padding-right: 50px;
@@ -504,6 +524,20 @@ img {
     background-size: cover;
     background-position: 50%;
     box-shadow: 0 0 40px rgb(0 0 0 / 20%);
+}
+
+.about .right {
+    width: 50%;
+    padding-left: 50px;
+}
+
+.about .right .text {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    margin-bottom: 40px;
+    padding-top: 27px;
 }
 
 /* Resume Page */
@@ -544,33 +578,7 @@ img {
     text-align: center;
 }
 
-/* Button */
-.white-fill-bg {
-    margin-top: 35px;
-    text-decoration: none;
-    display: inline-block;
-    border: 2px solid #fff;
-    font-family: 'Poppins';
-    transition: all 0.5s cubic-bezier(0, 0, 0.1, 1);
-    font-size: 16px;
-}
-
-.btn-medium {
-    padding: 12px 41px;
-}
-
-.white-fill-bg.btn-outline {
-    background: transparent;
-    color: #fff;
-}
-
-.white-fill-bg.btn-outline:hover {
-    background: #fff;
-    color: #000;
-}
-
 /* Footer CSS */
-
 .social-container {
     /* background-color: rgba(36, 41, 37, 0.5); */
     background-color: rgba(220, 220, 220, 0.8);
@@ -596,30 +604,57 @@ a.github {
     color: black;
 }
 
-/* Mobile and Smaller Screen */
 @media only screen and (max-width: 1040px) {
+    /* Navbar */
     .navbar {
         display: none;
     }
 
+    /* Mobile Navbar */
     .mobile-navbar {
         display: block;
     }
-}
-
-@media only screen and (max-width: 767px) {
-    .container {
-        padding: 0 15px;
-    }
 
     /* About Section */
-    .about {
-        padding: 60px 0;
+    .about .about-inner {
+        flex-direction: column;
     }
+
     .about .left {
         padding-right: 0;
         width: 100%;
         margin-bottom: 50px;
+    }
+
+    .about .right {
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    /* About Section */
+    .about {
+        padding: 60px 0;
+    }
+
+    .about .left {
+        padding-right: 0;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    /* Button */
+    .button a {
+        padding: 8px 25px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* General */
+    .container {
+        padding: 0 15px;
     }
 
     /* Landing Page*/
