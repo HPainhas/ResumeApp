@@ -23,70 +23,6 @@ const Resume = () => {
                             <div className='position-relative'>
                                 <div className='title'>
                                     <span>Resume</span>
-                                    <h3>
-                                        Put resume's dictionary definition here
-                                    </h3>
-                                </div>
-                                <div className='row education'>
-                                    <div className='three columns header-col'>
-                                        <h1>
-                                            <span>Education</span>
-                                        </h1>
-                                    </div>
-                                    <div className='nine columns main-col'>
-                                        <div className='row item'>
-                                            <div className='twelve columns'>
-                                                <div>
-                                                    <h3>
-                                                        The Ohio State
-                                                        University
-                                                    </h3>
-                                                    <p className='degree'>
-                                                        B.S. in Computer and
-                                                        Information Sciences
-                                                        <span>•</span>
-                                                        <em className='date'>
-                                                            May 2020
-                                                        </em>
-                                                    </p>
-                                                    <p className='focus'>
-                                                        Focus
-                                                        <span>:</span>
-                                                        <span
-                                                            style={{
-                                                                fontWeight: 600,
-                                                            }}
-                                                        >
-                                                            Software Engineering
-                                                        </span>
-                                                    </p>
-                                                    <p className='deans'>
-                                                        Member of the Dean's
-                                                        List
-                                                        <span>:</span>
-                                                        <span
-                                                            style={{
-                                                                fontWeight: 600,
-                                                            }}
-                                                        >
-                                                            5 times
-                                                        </span>
-                                                    </p>
-                                                    <p className='gpa'>
-                                                        GPA
-                                                        <span>:</span>
-                                                        <span
-                                                            style={{
-                                                                fontWeight: 600,
-                                                            }}
-                                                        >
-                                                            3.28
-                                                        </span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div className='row work'>
                                     <div className='three columns header-col'>
@@ -101,15 +37,14 @@ const Resume = () => {
                                                     <h3>
                                                         eRetailing Associates
                                                     </h3>
-                                                    <p className='work-info'>
-                                                        Software Engineer /
-                                                        Android Engineer
+                                                    <p className='job-title'>
+                                                        Software Engineer
                                                         <span>•</span>
                                                         <em className='date'>
                                                             May 2019 - Present
                                                         </em>
                                                     </p>
-                                                    <p className='work-info'>
+                                                    <p className='job-info'>
                                                         My tasks on the
                                                         e-commerce team include:
                                                         continue to improve the
@@ -134,26 +69,30 @@ const Resume = () => {
                                                     </p>
                                                 </div>
                                                 <div>
-                                                    <h3
-                                                        style={{
-                                                            display: 'inline',
-                                                            marginRight: '10px',
-                                                        }}
-                                                    >
-                                                        Vyra
-                                                    </h3>
-                                                    <span>
-                                                        (tentative startup)
-                                                    </span>
-                                                    <p className='work-info'>
-                                                        Co-Found and CTO
+                                                    <div className='job-title-mobile'>
+                                                        <h3
+                                                            style={{
+                                                                display:
+                                                                    'inline',
+                                                                marginRight:
+                                                                    '10px',
+                                                            }}
+                                                        >
+                                                            Vyra
+                                                        </h3>
+                                                        <span>
+                                                            (tentative startup)
+                                                        </span>
+                                                    </div>
+                                                    <p className='job-title'>
+                                                        Co-Founder and CTO
                                                         <span>•</span>
                                                         <em className='date'>
                                                             January 2020 -
                                                             December 2020
                                                         </em>
                                                     </p>
-                                                    <p>
+                                                    <p className='job-info'>
                                                         Let’s face it. Typical
                                                         coding challenges and
                                                         white board questions
@@ -176,6 +115,105 @@ const Resume = () => {
                                                         time screen sharing,
                                                         real time note taking,
                                                         among other features.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='row education'>
+                                    <div className='three columns header-col'>
+                                        <h1>
+                                            <span>Education</span>
+                                        </h1>
+                                    </div>
+                                    <div className='nine columns main-col'>
+                                        <div className='row item'>
+                                            <div className='twelve columns'>
+                                                <div>
+                                                    <h3>
+                                                        The Ohio State
+                                                        University
+                                                    </h3>
+                                                    <p className='degree'>
+                                                        B.S. in Computer and
+                                                        Information Sciences
+                                                        <span>•</span>
+                                                        <em className='date'>
+                                                            May 2020
+                                                        </em>
+                                                    </p>
+                                                    <div className='degree-info-mobile'>
+                                                        <p className='focus'>
+                                                            Focus
+                                                            <span>:</span>
+                                                            <span
+                                                                style={{
+                                                                    fontWeight: 600,
+                                                                }}
+                                                            >
+                                                                Software
+                                                                Engineering
+                                                            </span>
+                                                        </p>
+                                                        <p className='deans'>
+                                                            Member of the Dean's
+                                                            List
+                                                            <span>:</span>
+                                                            <span
+                                                                style={{
+                                                                    fontWeight: 600,
+                                                                }}
+                                                            >
+                                                                5 semesters
+                                                            </span>
+                                                        </p>
+                                                        <p className='gpa'>
+                                                            GPA
+                                                            <span>:</span>
+                                                            <span
+                                                                style={{
+                                                                    fontWeight: 600,
+                                                                }}
+                                                            >
+                                                                3.28
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='row leadership'>
+                                    <div className='three columns header-col'>
+                                        <h1>
+                                            <span>Leadership</span>
+                                        </h1>
+                                    </div>
+                                    <div className='nine columns main-col'>
+                                        <div className='row item'>
+                                            <div className='twelve columns'>
+                                                <div>
+                                                    <h3>
+                                                        Design, Develop, Deploy
+                                                        Organization (D3)
+                                                    </h3>
+                                                    <p className='job-title'>
+                                                        The Ohio State
+                                                        University
+                                                        <span>•</span>
+                                                        <em className='date'>
+                                                            Fall 2019
+                                                        </em>
+                                                    </p>
+                                                    <p className='job-info'>
+                                                        Collaboratively worked
+                                                        on a team to develop a
+                                                        platform that will
+                                                        change the way technical
+                                                        interviews work in the
+                                                        tech world.
                                                     </p>
                                                 </div>
                                             </div>

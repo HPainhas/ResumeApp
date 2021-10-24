@@ -713,7 +713,8 @@ img {
 }
 
 .education,
-.work {
+.work,
+.leadership {
     display: flex;
     padding-top: 80px;
     padding-bottom: 80px;
@@ -735,10 +736,7 @@ img {
 }
 
 .columns {
-    position: relative;
     padding: 0 20px;
-    min-height: 1px;
-    float: left;
 }
 
 .resume h1 {
@@ -774,6 +772,38 @@ img {
     font-size: 25px;
 }
 
+.resume .job-title {
+    font-size: 16px;
+    font-style: italic;
+    color: #6e7881;
+    margin-top: 9px;
+    margin-bottom: 24px;
+}
+
+.resume .job-title span {
+    font-style: normal;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.resume .job-info {
+    margin-top: 9px;
+    margin-bottom: 24px;
+}
+
+.resume .technical-skills {
+    text-align: center;
+}
+
+.resume .tech-skill {
+    font-size: 16px;
+    font-weight: 500;
+    color: #6e7881;
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+}
+
 .resume .degree {
     font-size: 16px;
     font-style: italic;
@@ -794,7 +824,6 @@ img {
 
 .resume .deans {
     font-size: 16px;
-    font-style: italic;
     color: #6e7881;
     margin-top: 9px;
 }
@@ -805,7 +834,6 @@ img {
 
 .resume .focus {
     font-size: 16px;
-    font-style: italic;
     color: #6e7881;
     margin-top: 9px;
 }
@@ -816,40 +844,12 @@ img {
 
 .resume .gpa {
     font-size: 16px;
-    font-style: italic;
     color: #6e7881;
     margin-top: 9px;
 }
 
 .resume .gpa span {
     margin-left: 5px;
-}
-
-.resume .work-info {
-    font-size: 16px;
-    font-style: italic;
-    color: #6e7881;
-    margin-top: 9px;
-    margin-bottom: 24px;
-}
-
-.resume .work-info span {
-    font-style: normal;
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
-.resume .technical-skills {
-    text-align: center;
-}
-
-.resume .tech-skill {
-    font-size: 16px;
-    font-weight: 500;
-    color: #6e7881;
-    text-align: center;
-    display: inline-block;
-    padding: 20px;
 }
 
 /* Footer CSS */
@@ -895,7 +895,7 @@ a.github {
 
     .about .left {
         padding-right: 0;
-        width: 100%;
+        width: 75%;
         margin-bottom: 50px;
     }
 
@@ -915,6 +915,10 @@ a.github {
     }
 
     /* Skills Section */
+    .skills .title {
+        text-align: center;
+    }
+
     .skills .skills-inner {
         flex-direction: column;
     }
@@ -929,18 +933,89 @@ a.github {
         padding-left: 0;
         width: 100%;
     }
+
+    /* Resume Section */
+    .resume {
+        padding: 100px 0 80px;
+    }
+
+    .resume .title {
+        text-align: center;
+    }
+
+    .row {
+        margin: 0 auto;
+    }
+
+    .work,
+    .education,
+    .leadership,
+    .skill {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        flex-direction: column;
+    }
+
+    .row .three,
+    .row .nine {
+        width: 100%;
+    }
+
+    .row .twelve {
+        padding: 20px;
+    }
+
+    .resume .header-col {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .column .columns {
+        width: auto !important;
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 30px;
+    }
+
+    .resume h1 {
+        letter-spacing: 3px;
+    }
+
+    .resume h3 {
+        text-align: center;
+    }
+
+    .resume .degree,
+    .resume .job-title,
+    .resume .job-title-mobile {
+        text-align: center;
+    }
+
+    .resume .job-info {
+        margin-top: 9px;
+        margin-bottom: 48px;
+    }
+
+    .resume .main-col {
+        padding-right: 5%;
+    }
+
+    .degree-info-mobile {
+        padding-top: 20px;
+    }
+
+    .resume .focus,
+    .resume .deans,
+    .resume .gpa {
+        margin-top: 0;
+    }
 }
 
 @media only screen and (max-width: 900px) {
     /* About Section */
     .about {
         padding: 60px 0;
-    }
-
-    .about .left {
-        padding-right: 0;
-        width: 100%;
-        margin-bottom: 50px;
     }
 
     /* Portfolio Section */
