@@ -91,7 +91,7 @@ const Contact = () => {
                         <div id='talk' className='background'></div>
                         <div className='contact-inner'>
                             <div className='text'>
-                                <h3>Feel free to reach out!</h3>
+                                <h3>Let's connect!</h3>
                             </div>
                             <div>
                                 <SimpleModal buttonLabel='Contact Me'>

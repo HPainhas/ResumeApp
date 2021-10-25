@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import Skill from '../sections/Skill';
 import About from '../sections/About';
 import Resume from '../sections/Resume';
@@ -17,14 +17,13 @@ const positions = [
 const Landing = () => {
     const [index, setIndex] = useState(0);
 
-    // TODO THIS KEEPS RE-RENDERING THE ENTIRE PAGE
-    // useEffect(() => {
-    //     const intervalId = setInterval(
-    //         () => setIndex(index => index + 1),
-    //         3000 // Every 3 seconds
-    //     );
-    //     return () => clearTimeout(intervalId);
-    // }, []);
+    useEffect(() => {
+        const intervalId = setInterval(
+            () => setIndex(index => index + 1),
+            3000 // Every 3 seconds
+        );
+        return () => clearTimeout(intervalId);
+    }, []);
 
     return (
         <Fragment>
