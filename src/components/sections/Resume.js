@@ -85,7 +85,7 @@ const Resume = () => {
                                                         </span>
                                                     </div>
                                                     <p className='job-title'>
-                                                        Co-Founder and CTO
+                                                        Co-Founder
                                                         <span>•</span>
                                                         <em className='date'>
                                                             January 2020 -
@@ -144,6 +144,17 @@ const Resume = () => {
                                                         </em>
                                                     </p>
                                                     <div className='degree-info-mobile'>
+                                                        <p className='gpa'>
+                                                            GPA
+                                                            <span>:</span>
+                                                            <span
+                                                                style={{
+                                                                    fontWeight: 600,
+                                                                }}
+                                                            >
+                                                                3.28
+                                                            </span>
+                                                        </p>
                                                         <p className='focus'>
                                                             Focus
                                                             <span>:</span>
@@ -166,17 +177,6 @@ const Resume = () => {
                                                                 }}
                                                             >
                                                                 5 semesters
-                                                            </span>
-                                                        </p>
-                                                        <p className='gpa'>
-                                                            GPA
-                                                            <span>:</span>
-                                                            <span
-                                                                style={{
-                                                                    fontWeight: 600,
-                                                                }}
-                                                            >
-                                                                3.28
                                                             </span>
                                                         </p>
                                                     </div>
