@@ -15,16 +15,9 @@ const Portfolio = () => {
     useEffect(() => {
         const getGithubRepos = async username => {
             try {
-                const options = {
-                    uri: encodeURI(
-                        `https://api.github.com/users/${username}/repos?per_page=4&sort=created:asc&client_id${githubClientId}&client_secret${githubClientSecret}`
-                    ),
-                    method: 'GET',
-                    headers: {
-                        'user-agent': 'node.js',
-                    },
-                };
-                const gitHubResponse = await axios.get(options.uri, options);
+                const gitHubResponse = await axios.get(
+                    `https://api.github.com/users/${username}/repos?per_page=4&sort=created:asc&client_id${githubClientId}&client_secret${githubClientSecret}`
+                );
 
                 setRepos(gitHubResponse.data);
             } catch (error) {
