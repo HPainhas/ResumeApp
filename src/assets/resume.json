@@ -103,12 +103,12 @@
     ],
     "developmentSkills": [
         {
-            "name": "Android Development (Kotlin and Java)",
+            "name": "Android Development (Kotlin)",
             "value": 100,
             "icon": "faAndroid"
         },
         {
-            "name": "CI tools (Git, GitHub, Jira, Jenkins, etc.)",
+            "name": "CI tools (Git, Jira, Jenkins, etc.)",
             "value": 100,
             "icon": "faGit"
         },
