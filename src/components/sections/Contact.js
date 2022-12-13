@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import SimpleModal from '../layout/SimpleModal';
 import resumeData from '../../assets/resume.json';
-import ColumbusPic from '../../assets/columbus_skyline_background.jpg';
+import ColumbusPic from '../../assets/belo_horizonte_skyline.jpg';
 import { SiGithub } from 'react-icons/si';
 import { FaLinkedin } from 'react-icons/fa';
 import { FiPhoneCall } from 'react-icons/fi';
@@ -15,15 +15,6 @@ const Contact = () => {
         let icon = null;
 
         switch (info.type) {
-            case 'email':
-                icon = (
-                    <HiOutlineMail
-                        className='svg'
-                        size='2rem'
-                        color={'white'}
-                    />
-                );
-                break;
             case 'location':
                 icon = (
                     <BiCurrentLocation
@@ -31,11 +22,6 @@ const Contact = () => {
                         size='2rem'
                         color={'white'}
                     />
-                );
-                break;
-            case 'phone':
-                icon = (
-                    <FiPhoneCall className='svg' size='2rem' color={'white'} />
                 );
                 break;
             case 'linkedin':

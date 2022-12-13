@@ -1,18 +1,10 @@
 {
-    "bioHeader": "Software Engineer based in Columbus, OH",
+    "bioHeader": "Software Engineer based in Scottsdale, AZ",
     "bio": "I am an experienced Software Engineer and Android Developer, with previous experience as an athlete, and have a passion for innovation and a strong drive for continuous improvement in all of my endeavors. I have recently finished a course on data structure and algorithms and another on Android development, and I'm looking forward to applying what I have learned so far on my next projects.",
     "contact": [
         {
-            "type": "email",
-            "value": "hpainhas@hotmail.com"
-        },
-        {
             "type": "location",
-            "value": "Columbus, OH - USA"
-        },
-        {
-            "type": "phone",
-            "value": "+1 (614) 301-8600"
+            "value": "Scottsdale, AZ - USA"
         },
         {
             "type": "linkedin",
@@ -50,13 +42,25 @@
     },
     "workExperience": [
         {
+            "name": "Toast",
+            "position": "Software Engineer I",
+            "city": "Remote",
+            "state": "",
+            "country": "United States",
+            "start_date": "Dec 2021",
+            "end_date": "",
+            "description": [
+                "Android Engineer. Member of the Payments Experience team. Responsible for implementing new features, updating existing payment functionalities, and fixing bugs within the Toast point of sale (POS) application."
+            ]
+        },
+        {
             "name": "eRetailing Associates",
             "position": "Software Engineer / Android Engineer",
             "city": "Columbus",
             "state": "OH",
             "country": "United States",
             "start_date": "May 2019",
-            "end_date": "",
+            "end_date": "Dec 2021",
             "description": [
                 "Designed and developed an in-house Android application for the Zebra MC40 scanners using Java and Android Studio for the front-end, and Perl, SQL, and Firebase for the backend. The application uses different web transactions to help the production team with warehouse management tasks. These tasks involve: assign, locate, identify, pick, put away, receive, transfer, print, among others. The goal is to make the warehouse become paperless, the order workflow more efficient, and inventory 100% accurate.",
                 "Communicated directly with employees to gather requirements and to get feedback from the application, as well as their desired additional functionalities."
@@ -68,14 +72,18 @@
             "city": "Columbus",
             "state": "OH",
             "country": "United States",
-            "start_date": "January 2020",
-            "end_date": "Decembet 2020",
+            "start_date": "Jan 2020",
+            "end_date": "Dec 2020",
             "description": [
                 "My friends and I attempted to innovate the interviewing process for software engineers. We used React JS for the front-end and Node JS, Express, MySQL, and AWS for the back-end to build a web application that allowed interviewers and interviewees to have a more realistic interview experience. The application included a built-in calendar, dashboard, candidate management tools (favorites, position, etc.), real-time screen share, real-time note-taking, among other features."
             ]
         }
     ],
     "technicalProjects": [
+        {
+            "name": "Resume App",
+            "description": "Why not have a website as a resume? Simple React JS app that includes some of the projects I have worked on (pulled directly from GitHub), a quick section about myself, and of course, my resume information."
+        },
         {
             "name": "Countries App",
             "description": "Basic Android application that covers all the modern Android development patterns in Java. This includes: MVVM architecture, Lifecycle Extensions, Dagger2, RxJava, Retrofit, Glide, and some simple Unit Testing."
@@ -95,62 +103,92 @@
     ],
     "developmentSkills": [
         {
-            "name": "Android Development",
-            "value": 90,
+            "name": "Android Development (Kotlin and Java)",
+            "value": 100,
             "icon": "faAndroid"
         },
         {
-            "name": "Website Development",
+            "name": "CI tools (Git, GitHub, Jira, Jenkins, etc.)",
+            "value": 100,
+            "icon": "faGit"
+        },
+        {
+            "name": "Figma Design",
+            "value": 85,
+            "icon": "faFigma"
+        },
+        {
+            "name": "Website Development (React)",
             "value": 75,
             "icon": "faCode"
         },
         {
             "name": "REST API Design",
-            "value": 85,
+            "value": 70,
             "icon": "faServer"
         },
         {
-            "name": "SQL",
-            "value": 85,
+            "name": "MySQL",
+            "value": 60,
             "icon": "faDatabase"
         }
     ],
     "technicalSkills": [
         {
-            "name": "JavaScript",
-            "color": "#F7DF1E"
+            "name": "Kotlin",
+            "color": "#1AA5F3"
         },
         {
             "name": "Java",
             "color": "Orange"
         },
         {
-            "name": "Perl",
-            "color": "#41446D"
-        },
-        {
-            "name": "SQL",
-            "color": "#4479A1"
-        },
-        {
             "name": "Android",
             "color": "#9FC037"
         },
         {
-            "name": "React",
-            "color": "#61DBFB"
-        },
-        {
-            "name": "Redux",
-            "color": "#7749BD"
+            "name": "GitHub",
+            "color": "#000000"
         },
         {
             "name": "Git",
             "color": "#F05033"
         },
         {
+            "name": "Jira",
+            "color": "#2480F7"
+        },
+        {
+            "name": "Jenkins",
+            "color": "#325060"
+        },
+        {
+            "name": "Figma",
+            "color": "#9C56F6"
+        },
+        {
+            "name": "JavaScript",
+            "color": "#F7DF1E"
+        },
+        {
+            "name": "React",
+            "color": "#61DBFB"
+        },
+        {
+            "name": "SQL",
+            "color": "#4479A1"
+        },
+        {
             "name": "Firebase",
             "color": "#F58410"
+        },
+        {
+            "name": "iOS",
+            "color": "#04A3EC"
+        },
+        {
+            "name": "Swift",
+            "color": "#EB6137"
         }
     ],
     "intercollegiateAthletics": {

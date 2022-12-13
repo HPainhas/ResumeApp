@@ -21,7 +21,7 @@ const Footer = ({ resumeData: { contact, socialMedia } }) => {
                             <div className='social-container'>
                                 <div className='top-10'>
                                     <span className='barely-readable'>
-                                        &copy; 2021 by{' '}
+                                        &copy; 2023 by{' '}
                                     </span>
                                     <span className='full-name'>
                                         {contact.name}
