@@ -26,11 +26,7 @@ const App = () => {
 				<Navbar />
 				<MobileNavbar />
 				<Switch>
-					<Route
-						exact
-						path="https://hpainhas.github.io/resume-app/"
-						component={Landing}
-					/>
+					<Route exact path="/" component={Landing} />
 					<Route component={NotFound} />
 				</Switch>
 				<Footer resumeData={resumeData} />
