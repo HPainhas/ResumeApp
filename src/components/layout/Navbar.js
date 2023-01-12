@@ -27,7 +27,7 @@ const Navbar = () => {
 						<a
 							aria-current="page"
 							className="active"
-							href="https://hpainhas.github.io/resume-app/"
+							href="https://hpainhas-resume.netlify.app/"
 						>
 							<img src={logo} alt="HPainhas Logo" />
 						</a>
