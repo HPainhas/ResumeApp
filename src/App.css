@@ -718,19 +718,6 @@ img {
     padding: 150px 0 100px;
 }
 
-.resume-download-button {
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
-    font-weight: 600;
-    background-color: black;
-    display: inline-block;
-    padding: 2px 15px;
-    border: 2px solid black;
-    transition: all 0.5s cubic-bezier(0, 0, 0.1, 1);
-    cursor: pointer !important;
-}
-
 .education,
 .work,
 .leadership {
@@ -785,10 +772,6 @@ img {
 
 .row .twelve {
     width: 100%;
-}
-
-.resume h3 {
-    font-size: 25px;
 }
 
 .resume .job-title {

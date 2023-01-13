@@ -68,9 +68,9 @@ const Landing = () => {
 				</section>
 			) : null}
 			<About />
-			<Portfolio />
-			<Skill />
 			<Resume />
+			<Skill />
+			<Portfolio />
 			<Contact />
 		</Fragment>
 	);

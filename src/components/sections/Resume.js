@@ -18,8 +18,6 @@ import {
 import { DiAndroid } from "react-icons/di";
 import { BiCodeAlt } from "react-icons/bi";
 import resumeData from "../../assets/resume.json";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFilePdf } from "@fortawesome/fontawesome-free-solid";
 
 const Resume = () => {
 	return (
@@ -31,22 +29,6 @@ const Resume = () => {
 							<div className="position-relative">
 								<div className="title">
 									<span>Resume</span>
-									<div>
-										<a
-											className="resume-download-button"
-											href="/HPainhas_Resume.pdf"
-											target="_blank"
-											rel="noreferrer"
-											download
-										>
-											<FontAwesomeIcon
-												icon={faFilePdf}
-												size="1x"
-												className="icon"
-											/>
-											Download Resume
-										</a>
-									</div>
 								</div>
 								<div className="row work">
 									<div className="three columns header-col">
