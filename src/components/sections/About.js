@@ -36,7 +36,7 @@ const About = () => {
 									</div>
 									<div className="button">
 										<a
-											href="/HPainhas_Resume.pdf"
+											href="/henrique-painhas-resume.pdf"
 											target="_blank"
 											rel="noreferrer"
 											download
