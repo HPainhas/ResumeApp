@@ -12,8 +12,6 @@ import {
 	SiJenkins,
 	SiJira,
 	SiGithub,
-	SiSwift,
-	SiIos,
 } from "react-icons/si";
 import { DiAndroid } from "react-icons/di";
 import { BiCodeAlt } from "react-icons/bi";
@@ -402,26 +400,6 @@ const Resume = () => {
 																case "Firebase":
 																	icon = (
 																		<SiFirebase
-																			size="3rem"
-																			color={
-																				skill.color
-																			}
-																		/>
-																	);
-																	break;
-																case "iOS":
-																	icon = (
-																		<SiIos
-																			size="3rem"
-																			color={
-																				skill.color
-																			}
-																		/>
-																	);
-																	break;
-																case "Swift":
-																	icon = (
-																		<SiSwift
 																			size="3rem"
 																			color={
 																				skill.color
