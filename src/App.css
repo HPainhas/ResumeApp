@@ -774,6 +774,18 @@ img {
     width: 100%;
 }
 
+.resume .job-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.resume .job-div img {
+    width:60px;
+    height: auto;
+    margin-right: 10px;
+}
+
 .resume .job-title {
     font-size: 16px;
     font-style: italic;
@@ -1072,43 +1084,13 @@ a.github {
         text-align: left;
     }
 
-    /* Portfolio Section */
-    .portfolio {
-        padding: 100px 0 80px;
-    }
-
-    .portfolio .title {
-        text-align: center;
-    }
-
-    /* Skills Section */
-    .skills .title {
-        text-align: center;
-    }
-
-    .skills .skills-inner {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .skills .left {
-        padding-right: 0;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .skills .right {
-        padding-left: 0;
-        width: 100%;
-    }
-
-    .skills .right .skill-progress {
-        padding-top: 40px;
-    }
-
     /* Resume Section */
     .resume {
         padding: 100px 0 80px;
+    }
+
+    .resume .job-div {
+        justify-content: center;
     }
 
     .resume .title {
@@ -1181,6 +1163,40 @@ a.github {
     .resume .deans,
     .resume .gpa {
         margin-top: 0;
+    }
+    
+    /* Portfolio Section */
+    .portfolio {
+        padding: 100px 0 80px;
+    }
+
+    .portfolio .title {
+        text-align: center;
+    }
+
+    /* Skills Section */
+    .skills .title {
+        text-align: center;
+    }
+
+    .skills .skills-inner {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .skills .left {
+        padding-right: 0;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .skills .right {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .skills .right .skill-progress {
+        padding-top: 40px;
     }
 
     /* Contact Section */

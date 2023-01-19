@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
-import CountriesApp from "../../assets/countries_app.png";
-import ResumeApp from "../../assets/resume_app.jpg";
-import DevSocializa from "../../assets/devsocializa_app.jpg";
-import PokemonApp from "../../assets/pokemon_app.jpg";
+import CountriesApp from "../../assets/countries-app.png";
+import ResumeApp from "../../assets/resume-app.jpg";
+import DevSocializa from "../../assets/devsocializa-app.jpg";
+import PokemonApp from "../../assets/pokemon-app.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faJsSquare, faJava } from "@fortawesome/free-brands-svg-icons";
 

@@ -18,6 +18,9 @@ import {
 import { DiAndroid } from "react-icons/di";
 import { BiCodeAlt } from "react-icons/bi";
 import resumeData from "../../assets/resume.json";
+import toastLogo from "../../assets/toast-logo.png";
+import eRetailingLogo from "../../assets/eretailing-logo.jpeg";
+import vyraLogo from "../../assets/vyra-logo.png";
 
 const Resume = () => {
 	return (
@@ -40,7 +43,13 @@ const Resume = () => {
 										<div className="row item">
 											<div className="twelve columns">
 												<div>
-													<h3>Toast</h3>
+													<div className="job-div">
+														<img
+															src={toastLogo}
+															alt="Toast logo"
+														></img>
+														<h3>Toast</h3>
+													</div>
 													<p className="job-title">
 														Software Engineer I
 														<span>•</span>
@@ -64,9 +73,13 @@ const Resume = () => {
 													</p>
 												</div>
 												<div>
-													<h3>
-														eRetailing Associates
-													</h3>
+													<div className="job-div">
+														<img
+															src={eRetailingLogo}
+															alt="eRetailing logo"
+														></img>
+														<h3>eRetailing</h3>
+													</div>
 													<p className="job-title">
 														Software Engineer
 														<span>•</span>
@@ -100,19 +113,26 @@ const Resume = () => {
 												</div>
 												<div>
 													<div className="job-title-mobile">
-														<h3
-															style={{
-																display:
-																	"inline",
-																marginRight:
-																	"10px",
-															}}
-														>
-															Vyra
-														</h3>
-														<span>
-															(tentative startup)
-														</span>
+														<div className="job-div">
+															<img
+																src={vyraLogo}
+																alt="Vyra logo"
+															></img>
+															<h3
+																style={{
+																	display:
+																		"inline",
+																	marginRight:
+																		"10px",
+																}}
+															>
+																Vyra
+															</h3>
+															<span>
+																(tentative
+																startup)
+															</span>
+														</div>
 													</div>
 													<p className="job-title">
 														Co-Founder

@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import resumeData from "../../assets/resume.json";
-import HenriqueProfilePic from "../../assets/henrique_thumbs_up.jpeg";
+import HenriqueProfilePic from "../../assets/henrique-thumbs-up.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilePdf } from "@fortawesome/fontawesome-free-solid";
 

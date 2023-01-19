@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect } from "react";
-import logo from "../../assets/HPainhas_logo_medium.png";
+import logo from "../../assets/hpainhas-logo-medium.png";
 import $ from "jquery";
 
 const MobileNavbar = () => {

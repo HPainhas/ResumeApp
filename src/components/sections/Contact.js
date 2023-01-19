@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import SimpleModal from "../layout/SimpleModal";
 import resumeData from "../../assets/resume.json";
-import ColumbusPic from "../../assets/belo_horizonte_skyline.jpg";
+import ColumbusPic from "../../assets/belo-horizonte-skyline.jpg";
 import { SiGithub } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { BiCurrentLocation } from "react-icons/bi";
