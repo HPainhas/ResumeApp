@@ -1265,3 +1265,14 @@ a.github {
         font-size: 12px;
     }
 }
+
+@media only screen and (max-width: 480px) {
+    /* Resume */
+    .resume .job-title span {
+        display: none;
+    }
+
+    .resume .job-title em {
+        display: block;
+    }
+}
