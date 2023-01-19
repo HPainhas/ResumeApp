@@ -113,13 +113,8 @@
             "icon": "faGit"
         },
         {
-            "name": "Figma Design",
-            "value": 85,
-            "icon": "faFigma"
-        },
-        {
             "name": "Website Development (React)",
-            "value": 75,
+            "value": 85,
             "icon": "faCode"
         },
         {

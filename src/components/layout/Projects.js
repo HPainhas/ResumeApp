@@ -4,7 +4,12 @@ import ResumeApp from "../../assets/resume-app.jpg";
 import DevSocializa from "../../assets/devsocializa-app.jpg";
 import PokemonApp from "../../assets/pokemon-app.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faJsSquare, faJava } from "@fortawesome/free-brands-svg-icons";
+import {
+	faJsSquare,
+	faJava,
+	faReact,
+	faAndroid,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Projects = ({ repos }) => {
 	return (
@@ -12,15 +17,21 @@ const Projects = ({ repos }) => {
 			<div className="portfolio-list">
 				{repos.map((repository) => {
 					let imageSrc = "";
-					let iconSrc = "";
-					let color = "";
+					let languageColor = "";
+					let frameworkColor = "";
+					let iconLanguageSrc = "";
+					let iconFrameworkSrc = "";
 
 					if (repository.language === "JavaScript") {
-						iconSrc = faJsSquare;
-						color = "#F7DF1E";
+						iconLanguageSrc = faJsSquare;
+						iconFrameworkSrc = faReact;
+						languageColor = "#F7DF1E";
+						frameworkColor = "#61DBFB";
 					} else if (repository.language === "Java") {
-						iconSrc = faJava;
-						color = "Orange";
+						iconLanguageSrc = faJava;
+						iconFrameworkSrc = faAndroid;
+						languageColor = "Orange";
+						frameworkColor = "#9FC037";
 					}
 
 					if (repository.name === "dev-socializa-app")
@@ -57,9 +68,15 @@ const Projects = ({ repos }) => {
 										<h3>{repository.name}</h3>
 									</a>
 									<FontAwesomeIcon
-										icon={iconSrc}
+										icon={iconLanguageSrc}
 										size="2x"
-										color={color}
+										color={languageColor}
+										className="left-20"
+									/>
+									<FontAwesomeIcon
+										icon={iconFrameworkSrc}
+										size="2x"
+										color={frameworkColor}
 										className="left-20"
 									/>
 								</div>
