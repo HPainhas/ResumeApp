@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
-import CountriesApp from "../../assets/countries-app.png";
-import ResumeApp from "../../assets/resume-app.jpg";
-import DevSocializa from "../../assets/devsocializa-app.jpg";
+import CountriesApp from "../../assets/countries-app-screenshot.png";
+import ResumeApp from "../../assets/resume-app-screenshot.png";
+import DevSocializa from "../../assets/devsocializa-app-screenshot.png";
 import PokemonApp from "../../assets/pokemon-app.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
