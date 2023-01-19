@@ -47,7 +47,7 @@
             "city": "Remote",
             "state": "",
             "country": "United States",
-            "start_date": "Dec 2021",
+            "start_date": "December 2021",
             "end_date": "",
             "description": [
                 "Android Engineer. Member of the Payments Experience team. Responsible for implementing new features, updating existing payment functionalities, and fixing bugs within the Toast point of sale (POS) application."
@@ -60,7 +60,7 @@
             "state": "OH",
             "country": "United States",
             "start_date": "May 2019",
-            "end_date": "Dec 2021",
+            "end_date": "December 2021",
             "description": [
                 "Designed and developed an in-house Android application for the Zebra MC40 scanners using Java and Android Studio for the front-end, and Perl, SQL, and Firebase for the backend. The application uses different web transactions to help the production team with warehouse management tasks. These tasks involve: assign, locate, identify, pick, put away, receive, transfer, print, among others. The goal is to make the warehouse become paperless, the order workflow more efficient, and inventory 100% accurate.",
                 "Communicated directly with employees to gather requirements and to get feedback from the application, as well as their desired additional functionalities."
@@ -72,8 +72,8 @@
             "city": "Columbus",
             "state": "OH",
             "country": "United States",
-            "start_date": "Jan 2020",
-            "end_date": "Dec 2020",
+            "start_date": "January 2020",
+            "end_date": "December 2020",
             "description": [
                 "My friends and I attempted to innovate the interviewing process for software engineers. We used React JS for the front-end and Node JS, Express, MySQL, and AWS for the back-end to build a web application that allowed interviewers and interviewees to have a more realistic interview experience. The application included a built-in calendar, dashboard, candidate management tools (favorites, position, etc.), real-time screen share, real-time note-taking, among other features."
             ]
@@ -201,7 +201,7 @@
     },
     "leadershipActivities": [
         {
-            "name": "Design, Develop, Deploy Organization (D3)",
+            "name": "Design, Develop, Deploy (D3)",
             "location": "The Ohio State University",
             "city": "Columbus",
             "state": "OH",

@@ -774,13 +774,13 @@ img {
     width: 100%;
 }
 
-.resume .job-div {
+.resume .header-div {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.resume .job-div img {
+.resume .header-div img {
     width:60px;
     height: auto;
     margin-right: 10px;
@@ -800,9 +800,25 @@ img {
     margin-left: 5px;
 }
 
+.resume .job-title-mobile .header-div h3 {
+    margin-right: 10px;
+}
+
 .resume .job-info {
     margin-top: 9px;
     margin-bottom: 24px;
+}
+
+.resume .education-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.resume .education-div img {
+    width:60px;
+    height: auto;
+    margin-right: 10px;
 }
 
 .resume .technical-skills {
@@ -1089,8 +1105,19 @@ a.github {
         padding: 100px 0 80px;
     }
 
-    .resume .job-div {
-        justify-content: center;
+    .resume .header-div {
+        display: block;
+        text-align: center;
+        /* justify-content: center; */
+    }
+
+    .resume .header-div img {
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+
+    .resume .job-title-mobile .header-div h3 {
+        margin-right: 0px;
     }
 
     .resume .title {

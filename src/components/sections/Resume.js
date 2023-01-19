@@ -21,6 +21,7 @@ import resumeData from "../../assets/resume.json";
 import toastLogo from "../../assets/toast-logo.png";
 import eRetailingLogo from "../../assets/eretailing-logo.jpeg";
 import vyraLogo from "../../assets/vyra-logo.png";
+import ohioStateUniversityLogo from "../../assets/ohio-state-university-logo.png";
 
 const Resume = () => {
 	return (
@@ -43,7 +44,7 @@ const Resume = () => {
 										<div className="row item">
 											<div className="twelve columns">
 												<div>
-													<div className="job-div">
+													<div className="header-div">
 														<img
 															src={toastLogo}
 															alt="Toast logo"
@@ -54,7 +55,8 @@ const Resume = () => {
 														Software Engineer I
 														<span>•</span>
 														<em className="date">
-															Dec 2021 - Present
+															December 2021 -
+															Present
 														</em>
 													</p>
 													<p className="job-info">
@@ -73,7 +75,7 @@ const Resume = () => {
 													</p>
 												</div>
 												<div>
-													<div className="job-div">
+													<div className="header-div">
 														<img
 															src={eRetailingLogo}
 															alt="eRetailing logo"
@@ -84,7 +86,8 @@ const Resume = () => {
 														Software Engineer
 														<span>•</span>
 														<em className="date">
-															May 2019 - Dec 2021
+															May 2019 - December
+															2021
 														</em>
 													</p>
 													<p className="job-info">
@@ -113,21 +116,12 @@ const Resume = () => {
 												</div>
 												<div>
 													<div className="job-title-mobile">
-														<div className="job-div">
+														<div className="header-div">
 															<img
 																src={vyraLogo}
 																alt="Vyra logo"
 															></img>
-															<h3
-																style={{
-																	display:
-																		"inline",
-																	marginRight:
-																		"10px",
-																}}
-															>
-																Vyra
-															</h3>
+															<h3>Vyra</h3>
 															<span>
 																(tentative
 																startup)
@@ -138,7 +132,8 @@ const Resume = () => {
 														Co-Founder
 														<span>•</span>
 														<em className="date">
-															Jan 2020 - Dec 2020
+															January 2020 -
+															December 2020
 														</em>
 													</p>
 													<p className="job-info">
@@ -180,10 +175,18 @@ const Resume = () => {
 										<div className="row item">
 											<div className="twelve columns">
 												<div>
-													<h3>
-														The Ohio State
-														University
-													</h3>
+													<div className="header-div">
+														<img
+															src={
+																ohioStateUniversityLogo
+															}
+															alt="The Ohio State University logo"
+														></img>
+														<h3>
+															The Ohio State
+															University
+														</h3>
+													</div>
 													<p className="degree">
 														B.S. in Computer and
 														Information Sciences
@@ -246,7 +249,7 @@ const Resume = () => {
 												<div>
 													<h3>
 														Design, Develop, Deploy
-														Organization (D3)
+														(D3)
 													</h3>
 													<p className="job-title">
 														The Ohio State
