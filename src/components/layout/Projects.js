@@ -34,7 +34,7 @@ const Projects = ({ repos }) => {
 						frameworkColor = "#9FC037";
 					}
 
-					if (repository.name === "dev-socializa-app")
+					if (repository.name === "dev-socializa")
 						imageSrc = DevSocializa;
 					else if (repository.name === "resume-app")
 						imageSrc = ResumeApp;
