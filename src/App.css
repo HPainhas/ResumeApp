@@ -834,6 +834,10 @@ img {
     padding: 20px;
 }
 
+.resume .degree-container {
+    margin-bottom: 24px;
+}
+
 .resume .degree {
     font-size: 16px;
     font-style: italic;
@@ -1180,6 +1184,10 @@ a.github {
 
     .resume .main-col {
         padding-right: 5%;
+    }
+
+    .resume .degree-container {
+        margin-bottom: 48px;
     }
 
     .degree-info-mobile {

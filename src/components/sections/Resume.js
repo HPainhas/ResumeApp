@@ -20,6 +20,7 @@ import toastLogo from "../../assets/toast-logo.png";
 import eRetailingLogo from "../../assets/eretailing-logo.jpeg";
 import vyraLogo from "../../assets/vyra-logo.png";
 import ohioStateUniversityLogo from "../../assets/ohio-state-university-logo.png";
+import trineUniversityLogo from "../../assets/trine-university-logo.jpeg";
 
 const Resume = () => {
 	return (
@@ -172,7 +173,7 @@ const Resume = () => {
 									<div className="nine columns main-col">
 										<div className="row item">
 											<div className="twelve columns">
-												<div>
+												<div className="degree-container">
 													<div className="header-div">
 														<img
 															src={
@@ -187,7 +188,7 @@ const Resume = () => {
 													</div>
 													<p className="degree">
 														B.S. in Computer and
-														Information Sciences
+														Information Science
 														<span>•</span>
 														<em className="date">
 															May 2020
@@ -213,8 +214,7 @@ const Resume = () => {
 																	fontWeight: 600,
 																}}
 															>
-																Software
-																Engineering
+																Software Systems
 															</span>
 														</p>
 														<p className="deans">
@@ -227,6 +227,40 @@ const Resume = () => {
 																}}
 															>
 																5 semesters
+															</span>
+														</p>
+													</div>
+												</div>
+												<div>
+													<div className="header-div">
+														<img
+															src={
+																trineUniversityLogo
+															}
+															alt="Trine University logo"
+														></img>
+														<h3>
+															Trine University
+														</h3>
+													</div>
+													<p className="degree">
+														M.S. in Information
+														Studies
+														<span>•</span>
+														<em className="date">
+															May 2024
+														</em>
+													</p>
+													<div className="degree-info-mobile">
+														<p className="gpa">
+															GPA (in progreess)
+															<span>:</span>
+															<span
+																style={{
+																	fontWeight: 600,
+																}}
+															>
+																4.0
 															</span>
 														</p>
 													</div>
