@@ -248,12 +248,12 @@ const Resume = () => {
 														Studies
 														<span>•</span>
 														<em className="date">
-															May 2024
+															May 2024 (tentative)
 														</em>
 													</p>
 													<div className="degree-info-mobile">
 														<p className="gpa">
-															GPA (in progreess)
+															GPA
 															<span>:</span>
 															<span
 																style={{
