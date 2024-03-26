@@ -51,11 +51,46 @@ const Resume = () => {
 														<h3>Toast</h3>
 													</div>
 													<p className="job-title">
+														Software Engineer II
+														<span>•</span>
+														<em className="date">
+															March 2024 - Present
+														</em>
+													</p>
+													<p className="job-info">
+														Android Engineer
+														(Kotlin). Member of the
+														Payments Experience
+														team. Responsible for
+														implementing new
+														features, reducing
+														complexity and ambiguity
+														in the code through PRs
+														and documentation,
+														improving user
+														experience,
+														collaborating with other
+														teams, writing
+														Unit/Espresso tests, and
+														fixing bugs within the
+														Toast point of sale
+														(POS) application.
+													</p>
+												</div>
+												<div>
+													<div className="header-div">
+														<img
+															src={toastLogo}
+															alt="Toast logo"
+														></img>
+														<h3>Toast</h3>
+													</div>
+													<p className="job-title">
 														Software Engineer I
 														<span>•</span>
 														<em className="date">
 															December 2021 -
-															Present
+															March 2024
 														</em>
 													</p>
 													<p className="job-info">
