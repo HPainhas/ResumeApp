@@ -55,12 +55,24 @@
     "workExperience": [
         {
             "name": "Toast",
+            "position": "Software Engineer II",
+            "city": "Remote",
+            "state": "",
+            "country": "United States",
+            "start_date": "March 2024",
+            "end_date": "",
+            "description": [
+                "Android Engineer. Member of the Payments Experience team. Responsible for implementing new features, reducing complexity and ambiguity in the code through PRs and documentation, improving user experience, collaborating with other teams, writing Unit/Espresso tests, and fixing bugs within the Toast point of sale (POS) application."
+            ]
+        },
+        {
+            "name": "Toast",
             "position": "Software Engineer I",
             "city": "Remote",
             "state": "",
             "country": "United States",
             "start_date": "December 2021",
-            "end_date": "",
+            "end_date": "March 2024",
             "description": [
                 "Android Engineer. Member of the Payments Experience team. Responsible for implementing new features, updating existing payment functionalities, and fixing bugs within the Toast point of sale (POS) application."
             ]
