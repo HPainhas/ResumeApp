@@ -37,18 +37,6 @@ const App = () => {
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 		</Router>
-
-		// <Router>
-		// 	<Fragment>
-		// 		<Navbar />
-		// 		<MobileNavbar />
-		// 		<Routes>
-		// 			<Route path="/" element={<Landing />} />
-		// 			<Route path="*" element={<NotFound />} />
-		// 		</Routes>
-		// 		<Footer />
-		// 	</Fragment>
-		// </Router>
 	);
 };
 
