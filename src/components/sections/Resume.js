@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import Tooltip from "@mui/material/Tooltip";
 import {
-	SiJava,
 	SiJavascript,
 	SiMysql,
 	SiReact,
@@ -13,6 +12,7 @@ import {
 	SiJira,
 	SiGithub,
 } from "react-icons/si";
+import { FaJava } from "react-icons/fa6";
 import { DiAndroid } from "react-icons/di";
 import { BiCodeAlt } from "react-icons/bi";
 import resumeData from "../../assets/resume.json";
@@ -418,7 +418,7 @@ const Resume = () => {
 																	break;
 																case "Java":
 																	icon = (
-																		<SiJava
+																		<FaJava
 																			size="3rem"
 																			color={
 																				skill.color

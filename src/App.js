@@ -1,5 +1,5 @@
-import React, { Fragment } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import Landing from "./components/pages/Landing";
@@ -21,16 +21,34 @@ const App = () => {
 
 	return (
 		<Router>
-			<Fragment>
-				<Navbar />
-				<MobileNavbar />
-				<Switch>
-					<Route exact path="/" component={Landing} />
-					<Route component={NotFound} />
-				</Switch>
-				<Footer />
-			</Fragment>
+			<Routes>
+				<Route
+					path="/"
+					element={
+						<>
+							<Navbar />
+							<MobileNavbar />
+							<Landing />
+							<Footer />
+						</>
+					}
+				/>
+
+				<Route path="*" element={<NotFound />} />
+			</Routes>
 		</Router>
+
+		// <Router>
+		// 	<Fragment>
+		// 		<Navbar />
+		// 		<MobileNavbar />
+		// 		<Routes>
+		// 			<Route path="/" element={<Landing />} />
+		// 			<Route path="*" element={<NotFound />} />
+		// 		</Routes>
+		// 		<Footer />
+		// 	</Fragment>
+		// </Router>
 	);
 };
 
