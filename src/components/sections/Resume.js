@@ -212,6 +212,40 @@ const Resume = () => {
 													<div className="header-div">
 														<img
 															src={
+																trineUniversityLogo
+															}
+															alt="Trine University logo"
+														></img>
+														<h3>
+															Trine University
+														</h3>
+													</div>
+													<p className="degree">
+														M.S. in Information
+														Studies
+														<span>•</span>
+														<em className="date">
+															May 2024
+														</em>
+													</p>
+													<div className="degree-info-mobile">
+														<p className="gpa">
+															GPA
+															<span>:</span>
+															<span
+																style={{
+																	fontWeight: 600,
+																}}
+															>
+																4.0
+															</span>
+														</p>
+													</div>
+												</div>
+												<div>
+													<div className="header-div">
+														<img
+															src={
 																ohioStateUniversityLogo
 															}
 															alt="The Ohio State University logo"
@@ -262,40 +296,6 @@ const Resume = () => {
 																}}
 															>
 																5 semesters
-															</span>
-														</p>
-													</div>
-												</div>
-												<div>
-													<div className="header-div">
-														<img
-															src={
-																trineUniversityLogo
-															}
-															alt="Trine University logo"
-														></img>
-														<h3>
-															Trine University
-														</h3>
-													</div>
-													<p className="degree">
-														M.S. in Information
-														Studies
-														<span>•</span>
-														<em className="date">
-															May 2024 (tentative)
-														</em>
-													</p>
-													<div className="degree-info-mobile">
-														<p className="gpa">
-															GPA
-															<span>:</span>
-															<span
-																style={{
-																	fontWeight: 600,
-																}}
-															>
-																4.0
 															</span>
 														</p>
 													</div>
