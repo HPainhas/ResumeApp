@@ -14,9 +14,8 @@ const Portfolio = () => {
 		const getGithubRepos = async (username) => {
 			try {
 				const gitHubResponse = await axios.get(
-					`https://api.github.com/users/${username}/repos?per_page=4&sort=created:asc&client_id${githubClientId}&client_secret${githubClientSecret}`
+					`https://api.github.com/users/${username}/repos?client_id${githubClientId}&client_secret${githubClientSecret}`
 				);
-
 				setRepos(gitHubResponse.data);
 			} catch (error) {
 				console.error(error.message);
