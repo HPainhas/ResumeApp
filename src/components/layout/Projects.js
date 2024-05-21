@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import CountriesApp from "../../assets/countries-app-screenshot.png";
+import CountriesInfoApp from "../../assets/countries-info-app-screenshot.png";
 import CurrencyConverterApp from "../../assets/currency-converter-app-screenshot.png";
 import ResumeApp from "../../assets/resume-app-screenshot.png";
 import DevSocializa from "../../assets/devsocializa-app-screenshot.png";
@@ -8,7 +8,7 @@ import { DiAndroid, DiJava } from "react-icons/di";
 
 const listOfRepos = [
 	"currency-converter-app",
-	"countries-app",
+	"countries-info-app",
 	"resume-app",
 	"dev-socializa",
 ];
@@ -48,9 +48,9 @@ const Projects = ({ repos }) => {
 					} else if (repository.name === "resume-app") {
 						imageSrc = ResumeApp;
 						projectName = "Resume App";
-					} else if (repository.name === "countries-app") {
-						imageSrc = CountriesApp;
-						projectName = "Countries App";
+					} else if (repository.name === "countries-info-app") {
+						imageSrc = CountriesInfoApp;
+						projectName = "Countries Info App";
 					} else if (repository.name === "currency-converter-app") {
 						imageSrc = CurrencyConverterApp;
 						projectName = "Currency Converter App";
